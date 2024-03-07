@@ -28,7 +28,7 @@ $customer = $stmt->fetch();
                 <td><?= $customer['name'] ?></td>
                 <td><?= $customer['email'] ?></td>
                 <td><?= $customer['balance'] ?></td>
-                <td><a href="#" class="btn btn-primary text-white">Transfer Money</a></td>
+                <td><a href="transfer.php?id=<?= $customer['id'] ?> " class="btn btn-primary text-white">Transfer Money</a></td>
             </tr>
 
         </table>

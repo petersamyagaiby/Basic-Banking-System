@@ -29,7 +29,7 @@ $customers = $stmt->fetchAll();
                     <td><?= $customer['email'] ?></td>
                     <td><?= $customer['balance'] ?></td>
                     <td>
-                        <a href="#" class="btn btn-primary text-white">Transfer Money</a>
+                        <a href="transfer.php?id=<?= $customer['id'] ?> " class="btn btn-primary text-white">Transfer Money</a>
                         <a href="customer.php?id=<?= $customer['id'] ?> " class="btn btn-success text-white">Details</a>
                     </td>
 
