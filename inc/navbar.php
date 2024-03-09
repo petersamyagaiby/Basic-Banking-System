@@ -25,7 +25,7 @@
                         <a class="nav-link active text-light" aria-current="page" href="create.php">Create User</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="transactions.php">Transactions</a>
+                        <a class="nav-link active text-light" aria-current="page" href="transactions.php">All Transactions</a>
                     </li>
 
 

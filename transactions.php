@@ -10,7 +10,7 @@ $transactions = $stmt->fetchAll();
 
 <section class="container my-5">
     <div class="my-header text-center pb-5">
-        <h1>All Customers</h1>
+        <h1>All Transactions</h1>
     </div>
     <div class="d-flex justify-content-center">
         <table class="text-center mb-5">

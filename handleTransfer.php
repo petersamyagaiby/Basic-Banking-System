@@ -62,10 +62,9 @@ if (isset($_POST['submit'])) {
         $sender_name = $sender['name'];
         $receiver_name = $receiver['name'];
         $trans_num = uniqid();
-        $insert_transaction = "INSERT INTO transactions (trans_num, amount, sender, receiver) values (?,?,?,?)";
+        $insert_transaction = "INSERT INTO transactions (amount, sender, receiver) values (?,?,?)";
         $stmt = $connection->prepare($insert_transaction);
         $stmt->execute([
-            $trans_num,
             $amount,
             $sender_name,
             $receiver_name
@@ -73,7 +72,7 @@ if (isset($_POST['submit'])) {
 
         if ($stmt) {
             echo "<script> alert('Transaction Successfully !');
-                    window.location='customers.php';
+                    window.location='transactions.php';
                 </script>";
         }
     }
